@@ -1,0 +1,12 @@
+*csv
+!PostTest*
+!Data/stock*
+!Data/backup*
+*png
+*.pyc
+Cave/
+ign*
+ParticipantRecruitment*
+InformedConsent*
+*.zip
+*jsons*
