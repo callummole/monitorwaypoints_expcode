@@ -9,14 +9,6 @@ sys.path.append(rootpath)
 rootpath = 'C:/VENLAB data/shared_modules/pupil/capture_settings/plugins/drivinglab_pupil/'
 sys.path.append(rootpath)
 
-#rootpath = 'C:\Program Files\WorldViz\Vizard5\python'
-#sys.path.append(rootpath)
-
-"""
-Wheel fix attempts:
-Downloaded window cleaner from - https://community.logitech.com/s/feed/0D531000050zd9DCAQ
-Tried logitech gaming software 5.10.127 and also the last 9.x.x versions.
-"""
 
 AUTOWHEEL = True
 EYETRACKING = True
@@ -27,12 +19,12 @@ if PRACTICE: #HACK
 
 if AUTOWHEEL: 
 	import logitech_wheel_threaded
-import viz # vizard library
-import numpy as np # numpy library - such as matrix calculation
-import random # python library
+import viz #vizard
+import numpy as np 
+import random 
 import vizdriver #vizard library
 import viztask # vizard library
-import math as mt # python library
+import math as mt 
 #import eyetrike
 import pandas as pd
 import vizTrialManager
@@ -52,7 +44,6 @@ if EYETRACKING:
 Code generates an oval track (two straights, two constant curvature bends). 
 This track can be splined into automated and manual sections.
 the automated section should be a repeat of the steering wheel angle performance in the manual section
-so I will need an interpolating step matching position at start of automation with start of manual.
 """
 if EYETRACKING: 
 	###Connect over network to eyetrike and check the connection
